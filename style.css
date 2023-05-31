@@ -14,6 +14,9 @@ body {
   align-items: center;
   color: #fff;
   margin: 1rem;
+
+  background-color: #8ec5fc;
+  background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
 }
 
 h1 {
@@ -22,11 +25,18 @@ h1 {
   text-align: center;
 }
 
+.counter,
+textarea,
+.counter__data-remaining,
+.counter__data-total {
+  border-radius: 3px;
+}
+
 .counter {
-  background-color: #116d6e;
   padding: 1rem;
   width: 600px;
   max-width: 100%;
+  background-color: rgba(1, 1, 1, 0.7);
 }
 
 .counter textarea {
@@ -43,4 +53,15 @@ h1 {
 .counter__data {
   display: flex;
   justify-content: space-between;
+}
+
+.counter__data-total,
+.counter__data-remaining {
+  background-color: red;
+  padding: 0 1rem;
+  margin: 0 1rem;
+}
+
+.counter__data-remaining {
+  background-color: green;
 }
